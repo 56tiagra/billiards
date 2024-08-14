@@ -8,3 +8,13 @@
     height: 100px; /* Adjust this value according to your needs */
     margin-top: -100px; /* Same value as height */
 }
+
+.fullscreen {
+    height: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+    .fullscreen {
+        height: 800px;
+    }
+}
