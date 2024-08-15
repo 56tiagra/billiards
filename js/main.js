@@ -1,6 +1,13 @@
 
 $(document).ready(function(){
 	"use strict";
+  // click learn more button scroll to lastest product section
+  $('#btn-learn-more').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $('#latest-products').offset().top - 100
+    }, 1000);
+  });
 
   //------- Active Nice Select --------//
 
@@ -549,17 +556,3 @@ $(document).ready(function(){
         });
       }
  });
-// smooth scroll
-function scrollToSection(id) {
-  var element = document.getElementById(id);
-  var offset = 50; // Adjust this value according to your needs
-  var bodyRect = document.body.getBoundingClientRect().top;
-  var elementRect = element.getBoundingClientRect().top;
-  var elementPosition = elementRect - bodyRect;
-  var offsetPosition = elementPosition - offset;
-
-  window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth"
-  });
-}
