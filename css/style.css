@@ -18,3 +18,10 @@
         height: 800px;
     }
 }
+
+#latest-products-list .single-product {
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
